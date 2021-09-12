@@ -18,7 +18,7 @@ public class Prime_num {
         if(flag==0)
         System.out.println(num+" is not prime number");
         else if(num<2)
-        System.out.println("enter number greater than 2");
+        System.out.println("enter number greater than 1");
         else
         System.out.println(num+" is prime number");
         input.close();
