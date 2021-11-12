@@ -32,15 +32,18 @@ class AccountHolder extends Bank{ //account holder class
     }
 
     public double CheckLoan() {
-        if (balance >= 50000 && balance <= 100000 && Occupation != "farmer" && BankServices != "locker")
+        if ((this.balance >= 50000.0 && this.balance <= 100000.0) && ((String)this.Occupation != "farmer") && ((String)this.BankServices != "locker"))
             return (double) 8.0;
-        else if (balance >= 500000 && BankServices != "locker" && Occupation != "farmer") {
+        else if ((this.balance >= 500000.0) && ((String)this.BankServices != "locker" )&& ((String)this.Occupation != "farmer")) 
             return (double) 7.00;
-        } else if (balance >= 500000 && BankServices == "locker" && Occupation != "farmer") {
+        else if ((this.balance >= 500000.0) && ((String)this.BankServices == "locker") && ((String)this.Occupation != "farmer"))
             return (double) 6.50;
-        } else {
+        else {
             return (double) 6.00;
         }
+    }
+    public void display(){
+        System.out.println(this.accountNumber+" "+this.IFSC+" "+this.name+" "+this.Address+" "+this.Occupation+" "+this.balance+" "+this.Occupation+" "+this.BankServices);
     }
 }
 
@@ -68,11 +71,13 @@ class Main { //main class
         System.out.println("enter occuption and locker system");
         Ocup=input.nextLine();
         Locker=input.nextLine();
-        AccountHolder obj1 = new AccountHolder(Ac,IF , Name);
+        AccountHolder obj1 = new AccountHolder(Ac,IF, Name);
         obj1.EnterMoredetail(Address,contact, balance, Ocup, Locker);
 
         double loan = obj1.CheckLoan();
         System.out.println(loan);
+        // obj1.display();
+        input.close();
     }
 
 }
