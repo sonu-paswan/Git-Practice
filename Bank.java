@@ -51,17 +51,20 @@ class Main { //main class
         Scanner input=new Scanner(System.in);
         System.out.println("enter account number");
         Ac=input.nextLong();
+        input.nextLine();
         String Name,IF,Address,Ocup,Locker;
         System.out.println("enter IFSC");
-        IF=input.nextLine();// here is problem
+        IF=input.nextLine();
         System.out.println("enter name");
         Name=input.nextLine();
         System.out.println("enter address");
         Address=input.nextLine();
         System.out.println("enter contact");
         contact=input.nextLong();
+        input.nextLine();
         System.out.println("enter balance");
         balance=input.nextDouble();
+        input.nextLine();
         System.out.println("enter occuption and locker system");
         Ocup=input.nextLine();
         Locker=input.nextLine();
