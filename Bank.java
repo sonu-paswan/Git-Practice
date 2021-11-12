@@ -53,7 +53,7 @@ class Main { //main class
         Ac=input.nextLong();
         String Name,IF,Address,Ocup,Locker;
         System.out.println("enter IFSC");
-        IF=input.nextLine();
+        IF=input.nextLine();// here is problem
         System.out.println("enter name");
         Name=input.nextLine();
         System.out.println("enter address");
