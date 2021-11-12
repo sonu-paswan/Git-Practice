@@ -17,6 +17,7 @@ class AccountHolder extends Bank{ //account holder class
     
 
     AccountHolder(long accountNumber, String IFSC, String name) { // constructor
+        // super();
         this.accountNumber = accountNumber;
         this.IFSC = IFSC;
         this.name = name;
@@ -32,11 +33,11 @@ class AccountHolder extends Bank{ //account holder class
     }
 
     public double CheckLoan() {
-        if ((this.balance >= 50000.0 && this.balance <= 100000.0) && ((String)this.Occupation != "farmer") && ((String)this.BankServices != "locker"))
+        if ((balance >= 50000.0 && balance <= 100000.0) && (!Occupation.equals("farmer"))&&(!BankServices.equals("locker")))
             return (double) 8.0;
-        else if ((this.balance >= 500000.0) && ((String)this.BankServices != "locker" )&& ((String)this.Occupation != "farmer")) 
+        else if ((balance >= 500000.0) && (!BankServices.equals("locker"))&& (!Occupation.equals("farmer"))) 
             return (double) 7.00;
-        else if ((this.balance >= 500000.0) && ((String)this.BankServices == "locker") && ((String)this.Occupation != "farmer"))
+        else if ((balance >= 500000.0) && (BankServices.equals("locker")) && (!Occupation.equals("farmer")))
             return (double) 6.50;
         else {
             return (double) 6.00;
