@@ -1,0 +1,132 @@
+# This repo was created by me , when I was learning git and github
+---
+## some useful **git commands** 
+---
+### **git configuration**
+
+```bash
+git config --global user.name "<Your-Full-Name>" //sets up Git with your name
+```
+
+```bash
+git config --global user.email "<your-email-address>" //sets up Git with your email
+```
+
+---
+### **git initialization** 
+
+```bash
+git init  //initialize the folder to git
+```
+ 
+---
+### **git stagging commands**
+```bash
+git add --all  //stagges every thing
+```
+
+```bash
+git add -A  //stagges every thing as well
+```
+```bash
+git add .  //stagges every thing as well (best practice)
+```
+
+```bash
+git add to/the/directry.exemple  // stagges only the directory file
+```
+
+```bash
+git add * .js  // stagges every thing with the extension .js 
+```
+
+```bash
+git status  // show changes of files and files which are stagged
+```
+
+```bash
+git reset  // to rollback from the stagging 
+```
+
+```bash
+git reset --hard  // to rollback from the stagging with deleted files
+```
+
+---
+### **git commiting commands**
+```bash
+git commit -m 'comment as you want'  //to commit changes (comments are highly recommended) 
+```
+
+```bash
+git reset HEAD~  // to rollback from commit
+```
+
+```bash 
+
+git checkout {hash-code}  //to get back to a commit 
+
+(to check the hash code type git log ) 
+Exp: git checkout 59f733b
+```
+
+
+---
+### **git branching**
+```bash
+git branch   // info of branches 
+```
+
+```bash
+git branch {name}  //creat new branch
+
+Example: git branch secondry
+```
+
+```bash 
+git checkout {branch name} //to switch branch
+
+Example: git checkout secondry
+```
+
+```bash
+
+git merge {branch name} -m 'comment' //merge the branch where you are with other one
+```
+
+
+---
+### **git remote version controlling**
+
+```bash
+git clone origin {branch name}  //to clone a repository
+```
+
+```bash
+git remote add origin {link}  //to add origin to the git
+```
+
+```bash 
+git push origin {branch name}  //push changes 
+```
+
+```bash
+
+git pull origin {branch name}  //pull a branch
+
+```
+
+
+---
+# **useful images** 
+
+1. ![lifecycle of git ](./images/lifecycleofgit.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+2. ![git and github](./images/gitandgithub.png)
