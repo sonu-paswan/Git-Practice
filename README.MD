@@ -38,6 +38,7 @@ git add to/the/directry.exemple  // stagges only the directory file
 
 ```bash
 git restore --staged {filename}   // to unstage staged changes
+```
 
 ```bash
 git add * .js  // stagges every thing with the extension .js 
